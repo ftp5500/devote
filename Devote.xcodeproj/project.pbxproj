@@ -13,6 +13,7 @@
 		41E3A61528EBE7CD004A23A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E3A61428EBE7CD004A23A5 /* Preview Assets.xcassets */; };
 		41E3A61728EBE7CD004A23A5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3A61628EBE7CD004A23A5 /* Persistence.swift */; };
 		41E3A61A28EBE7CD004A23A5 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E3A61828EBE7CD004A23A5 /* Devote.xcdatamodeld */; };
+		41E3A62128EBE889004A23A5 /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = 41E3A62028EBE889004A23A5 /* Sound */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		41E3A61428EBE7CD004A23A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41E3A61628EBE7CD004A23A5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		41E3A61928EBE7CD004A23A5 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		41E3A62028EBE889004A23A5 /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
+		41E3A62B28EC0182004A23A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +58,17 @@
 		41E3A60C28EBE7C9004A23A5 /* Devote */ = {
 			isa = PBXGroup;
 			children = (
-				41E3A60D28EBE7C9004A23A5 /* DevoteApp.swift */,
-				41E3A60F28EBE7C9004A23A5 /* ContentView.swift */,
+				41E3A62B28EC0182004A23A5 /* Info.plist */,
+				41E3A62228EBF253004A23A5 /* View */,
+				41E3A62528EBF271004A23A5 /* Components */,
+				41E3A62628EBF284004A23A5 /* Data */,
+				41E3A62A28EC0091004A23A5 /* Models */,
+				41E3A62728EBF28B004A23A5 /* Constants */,
+				41E3A62928EC004E004A23A5 /* Style */,
+				41E3A62828EBF29C004A23A5 /* Utilitis */,
+				41E3A62328EBF260004A23A5 /* Extensions */,
+				41E3A62028EBE889004A23A5 /* Sound */,
 				41E3A61128EBE7CD004A23A5 /* Assets.xcassets */,
-				41E3A61628EBE7CD004A23A5 /* Persistence.swift */,
-				41E3A61828EBE7CD004A23A5 /* Devote.xcdatamodeld */,
 				41E3A61328EBE7CD004A23A5 /* Preview Content */,
 			);
 			path = Devote;
@@ -71,6 +80,66 @@
 				41E3A61428EBE7CD004A23A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41E3A62228EBF253004A23A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41E3A60D28EBE7C9004A23A5 /* DevoteApp.swift */,
+				41E3A60F28EBE7C9004A23A5 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41E3A62328EBF260004A23A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		41E3A62528EBF271004A23A5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		41E3A62628EBF284004A23A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		41E3A62728EBF28B004A23A5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		41E3A62828EBF29C004A23A5 /* Utilitis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilitis;
+			sourceTree = "<group>";
+		};
+		41E3A62928EC004E004A23A5 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		41E3A62A28EC0091004A23A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41E3A61628EBE7CD004A23A5 /* Persistence.swift */,
+				41E3A61828EBE7CD004A23A5 /* Devote.xcdatamodeld */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E3A62128EBE889004A23A5 /* Sound in Resources */,
 				41E3A61528EBE7CD004A23A5 /* Preview Assets.xcassets in Resources */,
 				41E3A61228EBE7CD004A23A5 /* Assets.xcassets in Resources */,
 			);
@@ -280,11 +350,13 @@
 				DEVELOPMENT_TEAM = T76MCQRV73;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Devote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,11 +381,13 @@
 				DEVELOPMENT_TEAM = T76MCQRV73;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Devote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
